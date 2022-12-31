@@ -1,7 +1,7 @@
 # projet-c
 Projet C : Rapport
 Mise en sitiuation
- La premiere fenetre permet d'enregistrer ( s'inscrire et s'identifier) les coodonnées du manager à savoir son nom , son prenom , son mot de passe en tenant en consideration les conditions qu'il faut faire ( le mot de passe doit contenir au minimun 6 caractères ).
+La premiere fenetre permet d'enregistrer ( s'inscrire et s'identifier) les coodonnées du manager à savoir son nom , son prenom , son mot de passe en tenant en consideration les conditions qu'il faut faire ( le mot de passe doit contenir au minimun 6 caractères ).
  ### Fonction initialize_manager( InitializeListing) et initialize_travel(Initialize_Travel) :
 le but de ces deux fonctions est de initialise la curseur toujours a la début des deux fichiers « manager.txt »et « trips.txt »
 ## le profil du manager :
@@ -27,6 +27,8 @@ A partir de deux dates entreés, on affiche les voyages disponnibles et demande 
 Cette fonction a comme role, comme son nom l'indique , d'afficher la description d'un voyage a savoir les dates de debut et de fin , destination , prix , nombre de place disponnible
 ### Fonction Supprimer le voyage :
 prend liste chainée de type Travel et supprime le voyage en connaissant la destination
+### Fonction changing_pass :
+cette fonction prend en parametre une liste chainnée de type managerprofile . Au cas ou le manager veut changer son mot de passe , cette fonction cherche tout d'abbort les coordonnées du manager en question ( Ce-ci se fait en entrant le mot de passe actuel ) Apres avoir retrouver le nom du manager , il peut donc changer son mot de passe tout en respectant les conditions exigées 
 
 Afin de rendre le projet plus interressant et ajouter notre touche , on a insérer d'autre fonctions a savoir la fonction changer le mot de passe : A travers cette fonction le manager est capable de changer son mot de passe 
 ### la fonction exit_system :

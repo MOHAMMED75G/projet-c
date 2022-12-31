@@ -25,6 +25,7 @@ prend comme une liste chainée de type Travel comme paramétre et peut modifier 
 A partir de deux dates entreés, on affiche les voyages disponnibles et demande si vaulais voir la discription de voyage obtenu.
 ### Fonction Description d'un voyage :
 Cette fonction a comme role, comme son nom l'indique , d'afficher la description d'un voyage a savoir les dates de debut et de fin , destination , prix , nombre de place disponnible
+Pour se faire , on a eu recours a une liste chainee de type Travel pour afficher la description du voyage apres avoir detecter sa destination   
 ### Fonction Supprimer le voyage :
 prend liste chainée de type Travel et supprime le voyage en connaissant la destination
 ### Fonction changing_pass :

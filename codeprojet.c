@@ -151,7 +151,7 @@ int main()
 }
 managerprofile* InitializeListing(managerprofile *hello)
 {
-    managerprofile* text,*petrol,temporary;
+    managerprofile* text,*p,temporary;
     FILE *fileope;
     int counting_cooridantes=0,z;
     float following;
@@ -166,17 +166,17 @@ managerprofile* InitializeListing(managerprofile *hello)
     rewind(fileope);
 	while(fscanf(fileope,"%s %s ",temporary.manager_name,temporary.manager_password)!=EOF)
 	{
-		petrol=(managerprofile*)malloc(sizeof(managerprofile));
-		strcpy(petrol->manager_name,temporary.manager_name);
-		strcpy(petrol->manager_password,temporary.manager_password);
-		petrol->next=NULL;
+		p=(managerprofile*)malloc(sizeof(managerprofile));
+		strcpy(p->manager_name,temporary.manager_name);
+		strcpy(p->manager_password,temporary.manager_password);
+		p->next=NULL;
 
 		if(hello==NULL)
-            hello=text=petrol;
+            hello=text=p;
 		else
 		{
-			hello->next=petrol;
-			hello=petrol;
+			hello->next=p;
+			hello=p;
 		}
 	}
 	fclose(fileope);

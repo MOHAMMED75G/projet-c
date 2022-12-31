@@ -304,8 +304,8 @@ managerprofile* Adding_manager(managerprofile* hello)
         }
     else  {
         test =false;
-        printf("\n\n\t\t\t\tle mot de passe est ne verife  pas tous les conditions susmentionee");
-        printf("\n\n\t\t\t\tEntrer un nouveau mot de passe qui verife ces conditions\n\n\t\t");
+        printf("\n\n\t\t\t\tle mot de passe est ne verife  pas tous les conditions susmentionees");
+        printf("\n\n\t\t\t\tEntrer un nouveau mot de passe qui verifie ces conditions\n\n\t\t");
         scanf(" %s",newwonderers->manager_password);
         }
 
@@ -353,7 +353,7 @@ Travel* add_Travel(Travel* hi)
          else printf("\t\tattention!\n");}
         while (!( test2)){
 
-        printf("\t\tEntrer la date fin de ce voyage(Remplir le date:jour puis espace puis mois puis espace puis annee)\n\t\t");
+        printf("\t\tEntrer la date fin de ce voyage(Remplir le date:jour puis espace puis moi puis espace puis annee)\n\t\t");
         scanf("%d%d%d",&newwonderers->date_end.day,&newwonderers->date_end.month,&newwonderers->date_end.year);
 		val2=fct_ValidDate(&(newwonderers->date_end.day),&(newwonderers->date_end.month),&(newwonderers->date_end.year));
         if (val2== 1)
@@ -468,7 +468,7 @@ return;
 }
 void delete_Travel(Travel *hi){
     char dest[100];
-    printf("\t\tdonner la destination a supprimer :");
+    printf("\t\tdonner la destination à supprimer :");
     scanf("%s",dest);
     if (hi == NULL)
          return(hi);

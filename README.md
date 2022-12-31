@@ -7,6 +7,7 @@ le but de ces deux fonctions est de initialise la curseur toujours a la début d
 ### Fonction Adding_manager: 
 ajout d'un manager son nom et mot de passe 
  avec des conditions bien déterminés sur le mot de passe la longeur doit etre >=6 et a des letter en majuscules et minuscules et des numero
+ Ce-ci se fait en entrant comme parametre une liste chainee de type managerprofile. Le but de cette liste chainee est lire les coordonnées de manager puis en les met dans un fichier dont le nom est manager.txt
 ### Fonction WriteToFile_manager :
 prendre une list chainée de type managerprofile comme parametre et ecrire les données du profil (nom et mot de passe ) dans un  file , sa nom est"managers".
 ### Fonction login (s’identifiez) :

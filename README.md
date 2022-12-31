@@ -1,35 +1,36 @@
 # projet-c
 Projet C : Rapport
-Mise au point 
-Vu qu'on utilise pas trop Github , on a opté pour messenger pour se collaborer 
-la Première reunion est tenue le 14/12/2022 pour mieux comprendre les deux sujets et choisir le sujet le plus convenable 
- 
-Apres avoir analyser et mieux comprendre les deux projets . On a choisit de travailler sur le deuxieme sujet 
-Dispatching et distribution des taches 
-Apres avoir comprendre ce qu'il faut faire , on a choisit de faire deux fenetres . La premiere fenetre permet d'enregistrer ( s'inscrire et s'identifier) les coodonnées du manager à savoir son nom , son prenom , son mot de passe en tenant en consideration les conditions qu'il faut faire ( le mot de passe doit contenir au minimun 6 caractères ). On a fait ensemble cette tache lors de 3 reunions effectuées le 15/12/2022 , le 16/12/2022 et le 17/12/2022 pour partager les idées dans le but de se familiariser avec la language 
- 
-
- 
-Une fois qu'on a accompli cette tache . On a distribuer les operations qui figurent dans la deuxiéme fenetre comme suit :
-Ajouter un voyage , recherche des voyages: Hale Dhaouadi
-Modifier le Voyage ,Changer le mot de passe : Achref
-Description d'un voyage, Suppression du voyage  , se déconnecter , sortir: Mohammed 
-Apres chaque avancement et a chaque fois que l'un des membres trouve une difficulté , une reunion se tenait en ligne afin d'evaluer le travail et corriger les defaillances 
-Fonction ajouter un voyage :
-le but de cette fonction et l'ajout d'un voyage avec ses caracteristiques a savoir destination , date de debut , date fin , prix , nombre de place disponnible .
-Bien evidemment il ya des conditions bien determinés sur les carateristique qu'il faut prendre en consideration à savoir date fin elle doit etre superieur ala date debut 
+Mise en sitiuation
+ La premiere fenetre permet d'enregistrer ( s'inscrire et s'identifier) les coodonnées du manager à savoir son nom , son prenom , son mot de passe en tenant en consideration les conditions qu'il faut faire ( le mot de passe doit contenir au minimun 6 caractères ).
+ # Fonction initialize_manager( InitializeListing) et initialize_travel(Initialize_Travel) :
+le but de ces deux fonctions est de initialise la curseur toujours a la début des deux fichiers « manager.txt »et « trips.txt »
+## le profil dumanger :
+# Fonction Adding_manager: 
+ajout d'un manager son nom et mot de passe 
+ avec des conditions bien déterminés sur le mot de passe la longeur doit etre >=6 et a des letter en majuscules et minuscules et des numero
+# Fonction WriteToFile_manager :
+prendre une list chainée de type managerprofile comme parametre et ecrire les données du profil (nom et mot de passe ) dans un  file , sa nom est"managers".
+# Fonction login (s’identifiez) :
+prend comme paramétre la liste chainée de type managerprofile et vérifie les coordonées de manager vrai ou non 
+si vrai le systeme va automatiquement a la système d’exploitation ou Le manager peut faire ces opérations de gérer les dates de voyages ,modifier les voyages , ajouter un autre tout en affichant son description ou le supprimer .
+## le voyage :
+# Fonction Add Travel:
+cette fonction ajoute des voyages caracterisé par identifiant unique (le premier voyage avec identifiant :50000) prend comme parametre liste chainée de type Travel et ajoute à cette liste le nouveau voyage , demande  de l'utilisateur le nom de destination ,la date d'aller , la date de retour , prix et nombre de places disponible pour ce voyage .(tout les informations va enrigestréé automatiquement ) 
+ il ya des conditions bien determinés sur les carateristique qu'il faut prendre en consideration à savoir date fin elle doit etre superieur ala date debut 
 le moi doit etre ente 1 et 12 , l'année doit etre superieur a 2022 et la date ne doit pas depassée 31 ( on a tenu en consideration le moi de fevrier egalement)
-Fonction Modifier le voyage :
-Le but de cette fonction et modifier les caracterisques du voyage en tenant en consideration les conditions exigées 
-Fonction recherche des voyages disponnibles :
-A partir de deux dates on affiche les voyages disponnibles 
-Fonction Description d'un voyage :
+     */ important : le premiere voyage seulment va cancler le programmme , mais tout va marché bien aprés la deuxieme lancemnt de programme /*
+# Fonction Modifier le voyage :
+prend comme une liste chainée de type Travel comme paramétre et peut modifier les caracterisques du voyage en tenant en consideration les conditions exigées .
+# Fonction recherche des voyages disponnibles :
+A partir de deux dates entreés, on affiche les voyages disponnibles et demande si vaulais voir la discription de voyage obtenu.
+# Fonction Description d'un voyage :
 Cette fonction a comme role, comme son nom l'indique , d'afficher la description d'un voyage a savoir les dates de debut et de fin , destination , prix , nombre de place disponnible
-Fonction Supprimer le voyage :
-Le but de cette fonction est de supprimer le voyage en connaissant la destination
+# Fonction Supprimer le voyage :
+prend liste chainée de type Travel et supprime le voyage en connaissant la destination
+
 Afin de rendre le projet plus interressant et ajouter notre touche , on a insérer d'autre fonctions a savoir la fonction changer le mot de passe : A travers cette fonction le manager est capable de changer son mot de passe 
-la fonction se déconnecter et sortir pour se deconnecter et sortir du programme ou cas ou le manager a terminé d'effectuer ces operations  
+# la fonction exit_system :
+pour se deconnecter et sortir du programme ou cas ou le manager a terminé d'effectuer ces operations  
 
 
-Sans oublier ,biensur, la mise en page de notre projet . Pour faire cette tache une reunion via google meet a été tenue le 30/12/2022 , apres avoir garantir l'exécussion de notre projet et accomplir nos taches ,pour choisir les couleurs qu'on doit inserer dans notre programme et la mise en page adequate 
  
